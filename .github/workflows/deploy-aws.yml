@@ -44,3 +44,4 @@ jobs:
               --restart always \
               ${{ secrets.DOCKERHUB_USERNAME }}/front:latest
               
+              
