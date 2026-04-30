@@ -37,12 +37,10 @@ jobs:
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/front:latest
             docker stop front || true
             docker rm front || true
-            
+
             docker run -d \
               --name front \
               -p 80:80 \
               --restart always \
               ${{ secrets.DOCKERHUB_USERNAME }}/front:latest
-
-            
               
